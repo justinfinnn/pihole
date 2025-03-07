@@ -1,0 +1,15 @@
+services:
+  pihole:
+    container_name: pihole
+    image: pihole/pihole:latest
+    restart: unless-stopped
+    env_file:
+      - .env
+    network_mode: "host"
+    volumes:
+      - ./config:/etc/pihole
+      - ./dnsmasq.d:/etc/dnsmasq.d
+
+networks:
+  pihole_net:
+    driver: bridge
