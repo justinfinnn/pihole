@@ -39,6 +39,6 @@ TZ=[your timezone]
 ### 2️⃣ Clone the Repository
 
 ```sh
-git clone https://github.com/your_username/pi-hole-docker.git
-cd pi-hole-docker
+git clone https://github.com/justinfinnn/pihole.git
+cd pihole
 ```
